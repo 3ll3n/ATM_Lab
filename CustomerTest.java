@@ -41,15 +41,15 @@ public class CustomerTest{
   @Test
   public void customerCanWithdrawMoney(){
     customer3.withdrawMoney(50, atm);
-    assertEquals(150, customer1.getBalance());
+    assertEquals(1550, customer3.getBalance());
     assertEquals(9950, atm.getTotalMoney());
   }
 
   @Test
   public void customerCannotWithdrawMoney(){
-    customer3.withdrawMoney(500, atm);
-    assertEquals(150, customer1.getBalance());
-    assertEquals("Over daily limit", atm.getTotalMoney());
+    String result = customer3.withdrawMoney(500, atm);
+    assertEquals(1500, customer3.getBalance());
+    assertEquals("Over daily limit", result);
   }
 
   @Test
