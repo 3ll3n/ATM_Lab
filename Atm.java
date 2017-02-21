@@ -22,5 +22,9 @@ public class Atm {
     return this.dailyLimit;
   }
 
+  public void reduceTotalMoney(int money){
+    this.totalMoney -= money;
+  }
+
 
 }

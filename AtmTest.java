@@ -28,5 +28,11 @@ public class AtmTest{
   public void testGetDailyLimit(){
     assertEquals(250, atm1.getDailyLimit());
   }
+
+  @Test
+  public void testReduceTotalMoney(){
+    atm1.reduceTotalMoney(100);
+    assertEquals(400, atm1.getTotalMoney());
+  }
   
 }
