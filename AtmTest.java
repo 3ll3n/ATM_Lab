@@ -18,5 +18,15 @@ public class AtmTest{
   public void testGetLocation(){
     assertEquals("Main Street", atm1.getLocation());
   }
+
+  @Test 
+  public void testGetTotalMoney(){
+    assertEquals(500, atm1.getTotalMoney());
+  }
+
+  @Test
+  public void testGetDailyLimit(){
+    assertEquals(250, atm1.getDailyLimit());
+  }
   
 }

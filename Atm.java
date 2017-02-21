@@ -1,17 +1,25 @@
 public class Atm {
 
   private String location;
-  private int total_money;
-  private int daily_limit;
+  private int totalMoney;
+  private int dailyLimit;
 
-  public Atm(String location, int total_money, int daily_limit){
+  public Atm(String location, int totalMoney, int dailyLimit){
     this.location = location;
-    this.total_money = total_money;
-    this.daily_limit = daily_limit;
+    this.totalMoney = totalMoney;
+    this.dailyLimit = dailyLimit;
   } 
 
   public String getLocation(){
     return this.location;
+  }
+
+  public int getTotalMoney(){
+    return this.totalMoney;
+  }
+
+  public int getDailyLimit(){
+    return this.dailyLimit;
   }
 
 
