@@ -30,12 +30,13 @@ public class CustomerTest{
 
   @Test
   public void testIncreaseBalance(){
-    customer1.withdrawCash(50);
+    customer1.withdrawMoney(50);
     assertEquals(150, customer1.getBalance());
   }
 
-  // @Test
-  // public void testDecreaseBalance(){
-
-  // }
+  @Test
+  public void testDecreaseBalance(){
+    customer1.spendMoney(50);
+    assertEquals(50, customer1.getBalance());
+  }
 }

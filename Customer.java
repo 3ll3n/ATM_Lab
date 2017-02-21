@@ -22,8 +22,12 @@ public class Customer {
     return this.wallet;
   }
 
-  public void withdrawCash(int cash){
-    this.wallet += cash;
+  public void withdrawMoney(int money){
+    this.wallet += money;
+  }
+
+  public void spendMoney(int money){
+    this.wallet -= money;
   }
 
 }
