@@ -7,6 +7,7 @@ public class AtmTest{
   Atm atm1;
   Atm atm2;
 
+
   @Before
   public void before(){
 
@@ -25,8 +26,8 @@ public class AtmTest{
   }
 
   @Test
-  public void testGetDailyLimit(){
-    assertEquals(250, atm1.getDailyLimit());
+  public void testGetMaxWithdrawl(){
+    assertEquals(250, atm1.getMaxWithdrawl());
   }
 
   @Test

@@ -22,11 +22,16 @@ public class Customer {
     return this.wallet;
   }
 
-  public void withdrawMoney(int money){
+  public String withdrawMoney(int money, Atm atm){
+    if(money > atm.getMaxWithdrawl()){
+      return "Over daily limit";
+    }
     this.wallet += money;
+    atm.reduceTotalMoney(money);
+    return "Here's yer money";
   }
 
-  public void spendMoney(int money){
+  public void depositMoney(int money){
     this.wallet -= money;
   }
 

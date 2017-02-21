@@ -2,12 +2,12 @@ public class Atm {
 
   private String location;
   private int totalMoney;
-  private int dailyLimit;
+  private int maxWithdrawl;
 
-  public Atm(String location, int totalMoney, int dailyLimit){
+  public Atm(String location, int totalMoney, int maxWithdrawl){
     this.location = location;
     this.totalMoney = totalMoney;
-    this.dailyLimit = dailyLimit;
+    this.maxWithdrawl = maxWithdrawl;
   } 
 
   public String getLocation(){
@@ -18,8 +18,8 @@ public class Atm {
     return this.totalMoney;
   }
 
-  public int getDailyLimit(){
-    return this.dailyLimit;
+  public int getMaxWithdrawl(){
+    return this.maxWithdrawl;
   }
 
   public void reduceTotalMoney(int money){
@@ -29,6 +29,5 @@ public class Atm {
   public void fillUpAtm(int money){
     this.totalMoney += money;
   }
-
 
 }
