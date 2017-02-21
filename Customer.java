@@ -3,11 +3,13 @@ public class Customer {
   private String name;
   private int age;
   private int wallet;
+  private Account account;
 
-  public Customer(String name, int age, int wallet){
+  public Customer(String name, int age, int wallet, Account account){
     this.name = name;
     this.age = age;
     this.wallet = wallet;
+    this.account = account;
   }
 
   public String getName(){

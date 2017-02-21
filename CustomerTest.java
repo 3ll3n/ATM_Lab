@@ -8,12 +8,13 @@ public class CustomerTest{
   Customer customer2;
   Customer customer3;
   Atm atm;
+  Account account;
 
   @Before
   public void before(){
-    customer1 = new Customer("Tom", 77, 100);
-    customer2 = new Customer("Gerry", 76, 200);
-    customer3 = new Customer("Granny", 95, 1500);
+    customer1 = new Customer("Tom", 77, 100, account);
+    customer2 = new Customer("Gerry", 76, 200, account);
+    customer3 = new Customer("Granny", 95, 1500, account);
     atm = new Atm("The Dingly Dell", 10000, 250);
   }
 
