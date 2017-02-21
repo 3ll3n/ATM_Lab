@@ -28,10 +28,11 @@ public class CustomerTest{
     assertEquals(200, customer2.getBalance());
   }
 
-  // @Test
-  // public void testIncreaseBalance(){
-  //   assertEquals(150, customer1.withdrawCash());
-  // }
+  @Test
+  public void testIncreaseBalance(){
+    customer1.withdrawCash(50);
+    assertEquals(150, customer1.getBalance());
+  }
 
   // @Test
   // public void testDecreaseBalance(){

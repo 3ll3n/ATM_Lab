@@ -22,8 +22,8 @@ public class Customer {
     return this.wallet;
   }
 
-  // public void withdrawCash(int cash){
-  //   this.wallet += cash;
-  // }
+  public void withdrawCash(int cash){
+    this.wallet += cash;
+  }
 
 }
