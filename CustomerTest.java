@@ -22,4 +22,9 @@ public class CustomerTest{
   public void testgetAge(){
     assertEquals(76, customer2.getAge());
   }
+
+  @Test
+  public void testgetBalance(){
+    assertEquals(200, customer2.getBalance());
+  }
 }

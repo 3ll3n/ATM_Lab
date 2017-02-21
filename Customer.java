@@ -18,4 +18,8 @@ public class Customer {
     return this.age;
   }
 
+  public int getBalance(){
+    return this.wallet;
+  }
+
 }
