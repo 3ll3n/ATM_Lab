@@ -34,5 +34,11 @@ public class AtmTest{
     atm1.reduceTotalMoney(100);
     assertEquals(400, atm1.getTotalMoney());
   }
+
+  @Test
+  public void testFillUpAtm(){
+    atm1.fillUpAtm(250);
+    assertEquals(750, atm1.getTotalMoney());
+  }
   
 }

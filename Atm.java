@@ -26,5 +26,9 @@ public class Atm {
     this.totalMoney -= money;
   }
 
+  public void fillUpAtm(int money){
+    this.totalMoney += money;
+  }
+
 
 }
