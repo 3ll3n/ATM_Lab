@@ -10,4 +10,12 @@ public class Customer {
     this.wallet = wallet;
   }
 
+  public String getName(){
+    return this.name;
+  }
+
+  public int getAge(){
+    return this.age;
+  }
+
 }

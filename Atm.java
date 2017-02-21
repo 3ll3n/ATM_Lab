@@ -9,4 +9,6 @@ public class Atm {
     this.money = money;
     this.limit = limit;
   } 
+
+  
 }
