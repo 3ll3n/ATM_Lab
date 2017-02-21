@@ -22,8 +22,12 @@ public class Atm {
     return this.maxWithdrawl;
   }
 
-  public void reduceTotalMoney(int money){
+  public String reduceTotalMoney(int money){
+    if(money > getTotalMoney()){
+      return "Unable to complete this transaction";
+    }
     this.totalMoney -= money;
+    return "Please take your funds";
   }
 
   public void fillUpAtm(int money){

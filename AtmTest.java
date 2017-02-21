@@ -41,5 +41,10 @@ public class AtmTest{
     atm1.fillUpAtm(250);
     assertEquals(750, atm1.getTotalMoney());
   }
+
+  @Test
+  public void testDepletedReserves(){
+    assertEquals("Unable to complete this transaction", atm1.reduceTotalMoney(550));
+  }
   
 }
