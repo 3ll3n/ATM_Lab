@@ -16,6 +16,7 @@ public class CustomerTest{
     customer2 = new Customer("Gerry", 76, 200, account);
     customer3 = new Customer("Granny", 95, 1500, account);
     atm = new Atm("The Dingly Dell", 10000, 250);
+    account = new Account(2500);
   }
 
   @Test
@@ -58,4 +59,9 @@ public class CustomerTest{
     customer1.depositMoney(50);
     assertEquals(50, customer1.getBalance());
   }
+
+  // @Test
+  // public void testCanCustomerWithdrawMoney(){
+
+  // }
 }
