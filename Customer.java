@@ -23,7 +23,7 @@ public class Customer {
   }
 
   public String withdrawMoney(int money, Atm atm){
-    if(money > atm.getMaxWithdrawl()){
+    if(money > atm.getMaxWithdrawal()){
       return "Over daily limit";
     }
     this.wallet += money;

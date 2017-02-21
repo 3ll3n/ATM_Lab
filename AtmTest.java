@@ -26,8 +26,8 @@ public class AtmTest{
   }
 
   @Test
-  public void testGetMaxWithdrawl(){
-    assertEquals(250, atm1.getMaxWithdrawl());
+  public void testGetMaxWithdrawal(){
+    assertEquals(250, atm1.getMaxWithdrawal());
   }
 
   @Test
